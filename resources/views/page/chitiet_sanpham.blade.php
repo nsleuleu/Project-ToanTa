@@ -98,7 +98,7 @@
 									</div>
 									<div class="single-item-caption">
 										<a class="add-to-cart pull-left" href="{{route('themgiohang',$sptt->id)}}"><i class="fa fa-shopping-cart"></i></a>
-										<a class="beta-btn primary" href="product.html">Chi tiết <i class="fa fa-chevron-right"></i></a>
+										<a class="beta-btn primary" href="{{route('themgiohang',$sptt->id)}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>
@@ -115,7 +115,7 @@
 							<div class="beta-sales beta-lists">
 							@foreach($sp_banchay as $spbc)	
 								<div class="media beta-sales-item">
-									<a class="pull-left" href="product.html"><img src="source/image/product/{{$spbc->image}}" alt=""></a>
+									<a class="pull-left" href="{{route('chitietsanpham',$spbc->id)}}"><img src="source/image/product/{{$spbc->image}}" alt=""></a>
 									<div class="media-body">
 										{{$spbc->name}}
 										<span class="beta-sales-price" style="font-size: 10px">{{number_format($spbc->unit_price)}} VNĐ</span>
@@ -131,7 +131,7 @@
 							<div class="beta-sales beta-lists">
 							@foreach($sp_capnhat as $spcn)	
 								<div class="media beta-sales-item">
-									<a class="pull-left" href="product.html"><img src="source/image/product/{{$spcn->image}}" alt=""></a>
+									<a class="pull-left" href="{{route('chitietsanpham',$spcn->id)}}"><img src="source/image/product/{{$spcn->image}}" alt=""></a>
 									<div class="media-body">
 										{{$spcn->name}}
 										<span class="beta-sales-price" style="font-size: 10px">{{number_format($spcn->unit_price)}}VNĐ</span>
