@@ -88,3 +88,32 @@ Route::get('search',[
     'as'=>'search',
     'uses'=>'PageController@getSearch'
 ]);
+
+Route::group(['prefix'=>'admin'],function(){
+    Route::group(['prefix'=>'products'],function(){
+        Route::get('danhsach','ProductsController@getDanhSach');
+        Route::get('sua','ProductsController@getSua');
+        Route::get('them','ProductsController@getThem');
+    });
+    Route::group(['prefix'=>'customer'],function(){
+        Route::get('danhsach','CustomerController@getDanhSach');
+        Route::get('sua','CustomerController@getSua');
+        Route::get('them','CustomerController@getThem');
+    });
+    Route::group(['prefix'=>'news'],function(){
+        Route::get('danhsach','NewsController@getDanhSach');
+        Route::get('sua','NewsController@getSua');
+        Route::get('them','NewsController@getThem');
+    });
+    Route::group(['prefix'=>'slide'],function(){
+        Route::get('danhsach','SlideController@getDanhSach');
+        Route::get('sua','SlideController@getSua');
+        Route::get('them','SlideController@getThem');
+    });
+    Route::group(['prefix'=>'user'],function(){
+        Route::get('danhsach','UserController@getDanhSach');
+        Route::get('sua','UserController@getSua');
+        Route::get('them','UserController@getThem');
+    });
+
+});

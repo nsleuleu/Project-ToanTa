@@ -65,7 +65,7 @@
 							<input type="password" name="re_password" required>
 						</div>
 						<div class="form-block">
-							<button type="submit" class="btn btn-primary">Register</button>
+							<button type="submit" class="btn btn-primary">Hoàn thành</button>
 						</div>
 					</div>
 					<div class="col-sm-3"></div>

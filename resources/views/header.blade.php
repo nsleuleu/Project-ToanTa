@@ -15,6 +15,7 @@
                     @else
                         <li><a href="{{route('signin')}}">Đăng kí</a></li>
                         <li><a href="{{route('login')}}">Đăng nhập</a></li>
+                        <li><a href="http://localhost/shop/public/admin/products/danhsach">Admin</a></li>
                     @endif
 
                     </ul>
